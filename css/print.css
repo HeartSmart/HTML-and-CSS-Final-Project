@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background-color: none;
+    width: 100%;
+    color: black;
+    font-size: 12pt;
+}
+.banner h1 {
+    font-size: 1.5rem;
+    text-shadow: none;
+}
+img {
+    display: none;
+}
+.openbtn {
+    display: none;
+}
+#top {
+    background-color: none;
+    box-shadow: none;
+}
+#info1 {
+    background-color: none;
+    box-shadow: none;
+}
+#info2 {
+    background-color: none;
+    box-shadow: none;
+}   
+#info3 {
+    background-color: none;
+    box-shadow: none;
+}
+#info4 {
+    background-color: none;
+    box-shadow: none;
+}

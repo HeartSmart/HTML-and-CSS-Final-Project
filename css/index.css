@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Jura", sans-serif;
+}
+p {
+    font-size: 1.2rem;
+}
+#nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(59, 59, 59);
+    height: 100%;
+    width: 0px;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#nav ul {
+    padding-top: 1.66rem;
+}
+#nav ul li {
+    list-style: none;
+    padding: 0.83rem 0;
+}
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    white-space: pre;
+    overflow: hidden;
+    transition: 0.2s;
+}
+#nav ul li a:hover {
+    color: #3e909e;
+}
+#nav div {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#nav div a {
+    font-size: 1.3rem;
+    margin: 0.83rem;
+    transition: 0.2s;
+    color: rgba(255, 255, 255, 0.795);
+}
+#nav div a:hover {
+    color: #3e909e;
+}
+.closebtn {
+    float: right;
+    padding: 0.83rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.banner {
+    margin: 0;
+    background-image: linear-gradient(to right,#571f94, #154bbf);
+    box-shadow: 0px 5px 5px #250953;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.openbtn {
+    margin-left: 0.83rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+i:hover {
+    cursor: pointer;
+}
+.banner h1 {
+    font-family: 'Tinos', serif;
+    text-shadow: 0px 3px 3px black;
+    text-align: left;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    display: inline;
+}
+.banner img {
+    float: right;
+    display: inline;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../media/background.jpg);
+    background-size: cover;
+}
+.info img {
+    width: auto;
+    height: 250px;
+}
+#info1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #2c318d;
+    padding: 0.83rem;
+    margin: 0.83rem;
+    box-shadow: 0 0.83rem 0.83rem black;
+    color: rgba(255, 255, 255, 0.842);
+}
+#info1 img {
+    margin-right: 0.83rem;
+    border: 5px outset black;
+    box-shadow: 0 0.25rem 0.25rem black;
+}
+#info2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1150c2;
+    padding: 0.83rem;
+    margin: 0.83rem;
+    box-shadow: 0 0.83rem 0.83rem black;
+    color: rgba(255, 255, 255, 0.842);
+}
+#info2 img {
+    margin-right: 0.83rem;
+    border: 5px outset black;
+    box-shadow: 0 0.25rem 0.25rem black;
+}
+#info3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #3e909e;
+    padding: 0.83rem;
+    margin: 0.83rem;
+    box-shadow: 0 0.83rem 0.83rem black;
+    color: rgba(255, 255, 255, 0.842);
+}
+#info3 img {
+    margin-right: 0.83rem;
+    border: 5px outset black;
+    box-shadow: 0 0.25rem 0.25rem black;
+}
+#info4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #351c78;
+    padding: 0.83rem;
+    margin: 0.83rem;
+    box-shadow: 0 0.83rem 0.83rem black;
+    color: rgba(255, 255, 255, 0.842);
+}
+footer {
+    color: white;
+    padding: 0.83rem;
+}
+
+#info1 {grid-area: i1;}
+#info2 {grid-area: i2;}
+#info3 {grid-area: i3;}
+#info4 {grid-area: i4;}
+
+
+@media only screen and (max-width: 1199px) {
+    #info2, #info3, #info4 {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .info img {
+        height: 200px;
+    }
+    article {
+        display: grid;
+        grid-template-areas:
+            'i1 i1 i1'
+            'i2 i2 i2'
+            'i3 i3 i3'
+            'i4 i4 i4';
+    }
+}
+@media only screen and (min-width: 1800px) {
+    article {
+        display: grid;
+        grid-template-areas:
+            'i1 i2 i2 i2'
+            'i1 i3 i3 i3'
+            'i4 i4 i4 i4';
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+    #info2, #info3, #info4 {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    article {
+        display: grid;
+        grid-template-areas:
+            'i1 i1 i2 i2'
+            'i1 i1 i2 i2'
+            'i4 i4 i3 i3'
+            'i4 i4 i3 i3';
+    }
+}
